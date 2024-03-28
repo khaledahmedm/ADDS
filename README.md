@@ -4,7 +4,7 @@ The script runs as a whole and it does the automation of creating a folder calle
 netdom query dc, repadmin /showreps, repadmin /showrepl, dcdiag /test:dns etc...
 
 
-v3 enhancements : 
+v3 enhancements (still under construction) : 
 Use a Loop: Instead of repeating the same command structure,   now a loop is used to execute the commands. 
 Error Handling: Add error handling to handle any failures during command execution was added. 
 

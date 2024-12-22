@@ -19,3 +19,17 @@ Parallel Execution: The Start-Job cmdlet is used to execute certain commands (li
 Cleaner Output with Write-Output: Instead of using Write-Host, I switched to Write-Output, which makes it easier to capture logs. This ensures the script's output is handled properly, especially if redirected to log files.
 
 Output Organization: Each command's output is stored in its respective log file in the ActiveDirectory_Logs directory. This makes it easier to locate the results of specific commands.
+
+v4 Enhancements & new features:
+
+-Stable tested version that fixed "'Run-Command' is not recognized as the name of a cmdlet" error
+-The script now exports the Security event log, allowing for better auditing and tracking of security-related events.
+-Active Directory-related events are now captured by exporting the Directory Service event log for deeper analysis.
+-Comprehensive system information, including OS version, memory, and hardware details, is now gathered to assist in diagnosing system-level issues.
+-The script now generates a list of all installed Windows updates to help identify potential patch-related issues.
+-Active network connections, listening ports, and associated process IDs are captured, providing valuable insight for network troubleshooting.
+-A detailed list of running services and their status is now included, helping to identify services that may be causing issues.
+-Active Directory replication health is monitored with a summary report to detect potential replication problems.
+-A detailed Group Policy report is now generated, showing all applied user and machine policies for better troubleshooting and verification.
+-The DNS zones configured on the DNS server are now listed to help identify DNS-related issues impacting Active Directory.
+-All scheduled tasks on the system are now listed, providing visibility into tasks that might affect system performance or stability.
